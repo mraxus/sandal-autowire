@@ -8,7 +8,7 @@ Sandal-autowire extends the [sandal](https://github.com/marcusberner/sandal) IOC
 
 ## Usage
 
-Creating a container will return a sandal container with an additional autowire function.
+Creating a container will return a `sandal` container with an additional `autowire` function.
 The autowire function will require all .js and .json files in the provided directory recursively and register them in container.
 
 ### Example
@@ -34,7 +34,7 @@ module.exports.autowire = {
 ### Parameters
  * `type` - Resolve behavior. Valid options are 'object', 'service' and 'factory'. If not provided, functions will be registered as factories and non-functions will be registered as objects.
  * `name` - Name used for registering the component. Filename without extension is used if no name is provided. 
- * `dependencies` - Names of dependencies to inject. Names if arguments will be used if not provided.
+ * `dependencies` - Names of dependencies to inject. Names of arguments will be used if not provided.
  * `transient` - If set to true, component will have transient lifecycle. Default is singleton.
  * `groups` - Groups to add the component to.
  * `ignore` - If set to true, the component will not be registered.
