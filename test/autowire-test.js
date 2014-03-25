@@ -5,7 +5,7 @@ var test = require("tap").test,
 
 test('Autowire folder and add components', function (t) {
 	sandal = require('../index.js')();
-	sandal.autowire(path.join(__dirname, 'test-components'));
+	sandal.autowire(path.join(__dirname, '../test-components/default'));
 	sandal.factory('foo', function (testfile) { return testfile.foo; });
 	t.end();
 });

@@ -7,7 +7,7 @@ test('Object as factory', function (t) {
 	sandal = require('../index.js')();
 	var err;
 	try {
-		sandal.autowire(path.join(__dirname, 'test-components-with-errors/object-as-factory'));
+		sandal.autowire(path.join(__dirname, '../test-components/with-errors/object-as-factory'));
 	}
 	catch (e) {
 		err = e;
