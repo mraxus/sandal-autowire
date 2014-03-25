@@ -1,0 +1,31 @@
+{
+  "name": "sandal-autowire",
+  "description": "Autowire extension to sandal",
+  "version": "1.0.0",
+  "main": "sandal",
+  "author": "Marcus Berner <marcus@burner.se>",
+  "dependencies": {
+    "sandal": "2.0.0"
+  },
+  "devDependencies": {
+    "tap": "~0.4.4"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/tap ./test"
+  },
+  "keywords": [
+    "sandal-autowire",
+    "sandal",
+    "ioc",
+    "inversion of control",
+    "dependency injection"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/marcusberner/sandal-autowire/raw/master/LICENSE"
+  },
+  "repository": "git://github.com/marcusberner/sandal-autowire",
+  "engines": {
+    "node": "*"
+  }
+}
