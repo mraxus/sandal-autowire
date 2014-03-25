@@ -12,7 +12,7 @@ Sandal-autowire extends the [sandal](https://github.com/marcusberner/sandal) IOC
 ## Usage
 
 Creating a container will return a `sandal` container with an additional `autowire` function.
-The autowire function will require all .js and .json files in the provided directory recursively and register them in container.
+The autowire function will require all .js and .json files in the provided directory recursively and register them in the container.
 
 ### Example
 ```js
