@@ -1,5 +1,8 @@
 #sandal-autowire
 
+[![Build Status](https://travis-ci.org/marcusberner/sandal-autowire.png?branch=master)](https://travis-ci.org/marcusberner/sandal-autowire)
+
+
 Sandal-autowire extends the [sandal](https://github.com/marcusberner/sandal) IOC container. It enables you to register all components in a folder. It is only compatible with node.js (No browser support).
 
 ## Installation
