@@ -6,9 +6,9 @@
 		fs = require('fs'),
 		path = require('path');
 
-	module.exports = function () {
+	module.exports = function (container) {
 
-		var sandal = new Sandal(),
+		var sandal = container || new Sandal(),
 			registerFolder = function (folderPath) {
 				var fileList = fs.readdirSync(folderPath).forEach(function (fileName) {
 					var filePath = path.join(folderPath, fileName),
