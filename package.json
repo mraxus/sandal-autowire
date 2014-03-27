@@ -1,7 +1,7 @@
 {
   "name": "sandal-autowire",
   "description": "Autowire extension for sandal",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "sandal",
   "author": "Marcus Berner <marcus@burner.se>",
   "dependencies": {
