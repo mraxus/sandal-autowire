@@ -5,7 +5,7 @@
   "main": "sandal",
   "author": "Marcus Berner <marcus@burner.se>",
   "dependencies": {
-    "sandal": "2.0.0"
+    "sandal": "2.1.1"
   },
   "devDependencies": {
     "tap": "~0.4.4"
