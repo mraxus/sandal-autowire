@@ -8,10 +8,10 @@
     "sandal": "2.1.1"
   },
   "devDependencies": {
-    "tap": "~0.4.4"
+    "tape": "2.12.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/tap ./test"
+	  "test": "tape test/*.js test/**/*.js"
   },
   "keywords": [
     "sandal-autowire",

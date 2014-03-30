@@ -1,5 +1,5 @@
 
-var test = require("tap").test,
+var test = require("tape"),
 	path = require('path'),
 	sandal;
 

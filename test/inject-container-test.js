@@ -1,5 +1,5 @@
 
-var test = require("tap").test,
+var test = require("tape"),
 	path = require('path'),
 	Sandal = require('sandal'),
 	sandal = new Sandal();
@@ -11,7 +11,7 @@ test('Autowire folder and add components', function (t) {
 	t.end();
 });
 
-test(' component', function (t) {
+test('Manual component', function (t) {
 	sandal.resolve(function(err, testfile) {
 		t.notOk(err);
 		t.equal(testfile.foo, 'bar', 'should autowire');
