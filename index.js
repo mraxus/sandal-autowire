@@ -44,6 +44,7 @@
 
 		sandal.autowire = function (path) {
 			registerFolder(path);
+			return sandal;
 		};
 
 		return sandal;
