@@ -107,3 +107,11 @@ test('Ignored components', function (t) {
 		t.end();
 	});
 });
+
+test('test-param object', function (t) {
+	sandal.resolve(function(err, testParam) {
+		t.notOk(err);
+		t.equal(testParam, 'testParam');
+		t.end();
+	});
+});

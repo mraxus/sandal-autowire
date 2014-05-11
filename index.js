@@ -4,7 +4,22 @@
 
 	var Sandal = require('sandal'),
 		fs = require('fs'),
-		path = require('path');
+		path = require('path'),
+
+		// Thanks to blakeembrey 
+		// https://github.com/blakeembrey/sentence-case/
+		// https://github.com/blakeembrey/camel-case/
+		convertName = function (string) {
+			return string
+				.replace(/([a-z])([A-Z0-9])/g, '$1 $2')
+				.replace(/[^a-zA-Z0-9]+/g, '.')
+				.replace(/(?!\d\.\d)(^|.)\./g, '$1 ')
+				.replace(/^ | $/g, '')
+				.toLowerCase()
+				.replace(/\./g, '_')
+				.replace(/ (\w)/g, function (_, $1) { return $1.toUpperCase(); });
+		};
+
 
 	module.exports = function (container) {
 
@@ -21,7 +36,7 @@
 						meta = component.autowire || {};
 						if (meta.ignore) return;
 						meta.type = meta.type || ((typeof(component) === 'function') ? 'factory' : 'object');
-						meta.name = meta.name || path.basename(filePath, path.extname(filePath));
+						meta.name = meta.name || convertName(path.basename(filePath, path.extname(filePath)));
 						if (meta.type === 'object') {
 							sandal.object(meta.name, component, meta.groups);
 						} else {
