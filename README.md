@@ -45,3 +45,10 @@ module.exports.autowire = {
  * `groups` - Groups to add the component to.
  * `ignore` - If set to true, the component will not be registered.
 
+## Filename conversion
+
+Filenames named in 'param-case' format will automatically be converted to 'camelCase' format.
+
+### Example
+
+Filename ```final-frontier.js``` will be resolved as ```finalFrontier```
